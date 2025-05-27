@@ -11,3 +11,7 @@ document.addEventListener("keydown", (event) => {
     alert("🎵 Музична пасхалка активована!");
   }
 });
+window.addEventListener('scroll', function() {
+  let scroll = window.scrollY;
+  document.querySelector('.parallax-layer').style.transform = `translateY(${scroll * 0.5}px)`;
+});

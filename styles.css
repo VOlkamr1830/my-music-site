@@ -1,0 +1,51 @@
+/* Клас 1: Меню */
+.menu {
+  list-style: none;            /* прибрати маркери */
+  padding: 0;
+  margin: 0;
+  display: flex;               /* горизонтальне меню */
+  background-color: #222;
+  justify-content: center;
+}
+
+/* Клас 2: Пункти меню */
+.menu-item {
+  margin: 0 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Реакція на наведення і натискання */
+.menu-item:hover {
+  background-color: #444;
+}
+
+.menu-item:active {
+  background-color: #666;
+}
+
+/* Клас 3: Заголовок */
+.headline {
+  font-size: 32px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Клас 4: Основний текст */
+.text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}

@@ -1,0 +1,32 @@
+/* Меню */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background-color: #222;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #444;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-item a:hover {
+  background-color: #666;
+}
+
+.menu-item a:active {
+  background-color: #999;
+}
+
+/* Заголовки і текст */
+.headline {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  color: #2c3e50;
+  margin-top: 20

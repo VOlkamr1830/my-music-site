@@ -614,3 +614,88 @@ button:hover {
 .logo a:hover {
   opacity: 0.8;
 }
+/* ==== МОБІЛЬНА ОПТИМІЗАЦІЯ < 480px ==== */
+@media (max-width: 480px) {
+   .hero-new {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+   .price-table,
+  .gallery-grid,
+  .track-grid {
+    overflow-x: auto;
+    display: block;
+  }
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+   .services-section,
+  .gallery-section,
+  .price-section,
+  .track-section {
+    padding: 10px;
+    margin: 30px 10px;
+  }
+
+  .order-form {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+
+  .features {
+    padding: 40px 10px;
+  }
+    body {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .price-section h2,
+  .track-section h2,
+  .services-section h2,
+  .gallery-section h2 {
+    font-size: 28px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+}

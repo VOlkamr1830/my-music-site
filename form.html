@@ -2,23 +2,27 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Головна</title>
+  <title>Форма</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <ul class="menu">
+    <li><a href="index.html">Головна</a></li>
     <li><a href="services.html">Послуги</a></li>
-    <li><a href="form.html">Форма</a></li>
     <li><a href="price.html">Прайс</a></li>
     <li><a href="track.html">Трек</a></li>
     <li><a href="studio.html">Фото</a></li>
   </ul>
 
-  <h1 class="headline">Ласкаво просимо на музичний сайт</h1>
-  <p class="text">
-    Це <b>персональний вебсайт</b> музиканта, де ви знайдете <i>послуги</i>, приклади робіт та контактну інформацію.
-  </p>
+  <h2>Форма замовлення</h2>
+  <form>
+    Ім’я: <input type="text" name="name"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Повідомлення:<br>
+    <textarea rows="4" cols="40"></textarea><br><br>
+    <button type="submit">Надіслати</button>
+  </form>
 
   <script src="script.js"></script>
 </body>

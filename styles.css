@@ -1,80 +1,21 @@
-/* Клас 1: Меню */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
 .menu {
-  list-style: none;            /* прибрати маркери */
-  padding: 0;
-  margin: 0;
-  display: flex;               /* горизонтальне меню */
-  background-color: #222;
-  justify-content: center;
+  list-style: none;
+  display: flex;
+  gap: 10px;
 }
 
-/* Клас 2: Пункти меню */
-.menu-item {
-  margin: 0 15px;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-}
-
-.menu-item a {
-  color: white;
+.menu li a {
   text-decoration: none;
-  display: block;
+  padding: 5px 10px;
+  background: lightgray;
+  border-radius: 5px;
 }
 
-/* Реакція на наведення і натискання */
-.menu-item:hover {
-  background-color: #444;
-}
-
-.menu-item:active {
-  background-color: #666;
-}
-
-/* Клас 3: Заголовок */
-.headline {
-  font-size: 32px;
-  color: #1a1a1a;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Клас 4: Основний текст */
-.text {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
-}
-/* Паралакс-заголовок */
-.parallax-header {
-  background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1950&q=80');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 3rem;
-  text-shadow: 0 0 10px #000;
-}
-
-/* Другий паралакс-блок */
-.parallax-promo {
-  background-image: url('https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1950&q=80');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 2rem;
-  text-shadow: 0 0 8px #000;
+.menu li a:hover {
+  background: darkgray;
 }

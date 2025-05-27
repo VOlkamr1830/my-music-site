@@ -49,3 +49,32 @@
   margin: 20px auto;
   padding: 10px;
 }
+/* Паралакс-заголовок */
+.parallax-header {
+  background-image: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1950&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 10px #000;
+}
+
+/* Другий паралакс-блок */
+.parallax-promo {
+  background-image: url('https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1950&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 0 8px #000;
+}

@@ -32,7 +32,8 @@
 </header>
 
 
-  <section class="price-section">
+
+<section class="price-section">
   <h2>Прайс</h2>
   <table class="price-table">
     <thead>
@@ -42,30 +43,24 @@
         <th>Ціна</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>Трек</td>
-        <td>Запис та обробка одного музичного треку</td>
-        <td>1000 грн</td>
-      </tr>
-      <tr>
-        <td>Зведення</td>
-        <td>Звукозведення з урахуванням побажань клієнта</td>
-        <td>500 грн</td>
-      </tr>
-      <tr>
-        <td>Майстеринг</td>
-        <td>Фінальна обробка треку для публікації</td>
-        <td>700 грн</td>
-      </tr>
-      <tr>
-        <td>Оренда студії</td>
-        <td>1 година з інженером</td>
-        <td>400 грн</td>
-      </tr>
-    </tbody>
+    <tbody id="price-tbody"></tbody>
   </table>
+  <script>
+    fetch('/api/prices')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.getElementById('price-tbody');
+        tbody.innerHTML = data.map(row => `
+          <tr>
+            <td>${row.service}</td>
+            <td>${row.description}</td>
+            <td>${row.price} грн</td>
+          </tr>
+        `).join('');
+      });
+  </script>
 </section>
+
 
 
   <script src="script.js"></script>
